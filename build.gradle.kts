@@ -4,8 +4,6 @@ plugins {
     application  // Make sure to include this line to apply the application plugin
 }
 
-group = "Uttt.edu.mx"
-version = "0.0.1"
 
 application {
     mainClass.set("config.ApplicationKt") // Ensure this points to your correct main class
