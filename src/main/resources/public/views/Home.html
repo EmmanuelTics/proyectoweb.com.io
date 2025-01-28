@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sidebar With Submenus</title>
+    <link href="https://cdn.lineicons.com/4.0/lineicons.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/Home.css">
+
+</head>
+
+<body>
+<div class="wrapper">
+    <aside id="sidebar">
+        <div class="d-flex">
+            <button class="toggle-btn" type="button">
+                <i class="lni lni-grid-alt"></i>
+            </button>
+            <div class="sidebar-logo">
+                <a href="#">Empresa Tortillin</a>
+            </div>
+        </div>
+        <ul class="sidebar-nav">
+            <li class="sidebar-item">
+                <a href="#" class="sidebar-link" data-bs-toggle="collapse" data-bs-target="#submenuInicio"
+                   aria-expanded="false">
+                    <i class="lni lni-home"></i>
+                    <span>INICIO</span>
+                </a>
+                <ul class="collapse list-unstyled ps-4" id="submenuInicio">
+                    <li><a href="../views/Login.html">Página Principal</a></li>
+                    <li><a href="#">Acerca de</a></li>
+                </ul>
+            </li>
+            <li class="sidebar-item">
+                <a href="#" class="sidebar-link" data-bs-toggle="collapse" data-bs-target="#submenuEmpleados"
+                   aria-expanded="false">
+                    <i class="lni lni-users"></i>
+                    <span>GESTIÓN DE EMPLEADOS</span>
+                </a>
+                <ul class="collapse list-unstyled ps-4" id="submenuEmpleados">
+                    <li><a href="Employees/Register.html">Registrar Empleado</a></li>
+                    <li><a href="#">Editar Informacion de Empleados</a></li>
+                    <li><a href="#">Lista de empleados</a></li>
+                    <li><a href="#">Asignar Roles</a></li>
+
+                </ul>
+            </li>
+            <li class="sidebar-item">
+                <a href="#" class="sidebar-link" data-bs-toggle="collapse" data-bs-target="#submenuAsistencias"
+                   aria-expanded="false">
+                    <i class="lni lni-calendar"></i>
+                    <span>CONTROL DE ASISTENCIAS</span>
+                </a>
+                <ul class="collapse list-unstyled ps-4" id="submenuAsistencias">
+                    <li><a href="#">Registrar asistencia</a></li>
+                    <li><a href="#">Reporte de asistencias</a></li>
+                </ul>
+            </li>
+            <li class="sidebar-item">
+                <a href="#" class="sidebar-link" data-bs-toggle="collapse" data-bs-target="#submenuNomina"
+                   aria-expanded="false">
+                    <i class="lni lni-wallet"></i>
+                    <span>GESTIÓN DE NÓMINA</span>
+                </a>
+                <ul class="collapse list-unstyled ps-4" id="submenuNomina">
+                    <li><a href="#">Generar nómina</a></li>
+                    <li><a href="#">Historial de pagos</a></li>
+                </ul>
+            </li>
+            <li class="sidebar-item">
+                <a href="#" class="sidebar-link" data-bs-toggle="collapse" data-bs-target="#submenuDistribucion"
+                   aria-expanded="false">
+                    <i class="fas fa-truck"></i>
+                    <span>DISTRIBUCIÓN Y LOGÍSTICA</span>
+                </a>
+                <ul class="collapse list-unstyled ps-4" id="submenuDistribucion">
+                    <li><a href="#">Asignacion de rutas</a></li>
+                    <li><a href="#">Conntrol de entregas</a></li>
+                    <li><a href="#">Reportes de entregas</a></li>
+                </ul>
+            </li>
+            <li class="sidebar-item">
+                <a href="#" class="sidebar-link" data-bs-toggle="collapse" data-bs-target="#submenuCapacitacion"
+                   aria-expanded="false">
+                    <i class="lni lni-graduation"></i>
+                    <span>CAPACITACIÓN Y EVALUACIÓN</span>
+                </a>
+                <ul class="collapse list-unstyled ps-4" id="submenuCapacitacion">
+                    <li><a href="#">Cursos disponibles</a></li>
+                    <li><a href="#">Historial de evaluaciones</a></li>
+                </ul>
+            </li>
+            <li class="sidebar-item">
+                <a href="#" class="sidebar-link" data-bs-toggle="collapse" data-bs-target="#submenuSeguridad"
+                   aria-expanded="false">
+                    <i class="lni lni-shield"></i>
+                    <span>SEGURIDAD LABORAL</span>
+                </a>
+                <ul class="collapse list-unstyled ps-4" id="submenuSeguridad">
+                    <li><a href="#">Protocolos</a></li>
+                    <li><a href="#">Reportar incidente</a></li>
+                </ul>
+            </li>
+            <li class="sidebar-item">
+                <a href="#" class="sidebar-link" data-bs-toggle="collapse" data-bs-target="#submenuBeneficios"
+                   aria-expanded="false">
+                    <i class="lni lni-heart"></i>
+                    <span>BENEFICIOS Y BIENESTAR</span>
+                </a>
+                <ul class="collapse list-unstyled ps-4" id="submenuBeneficios">
+                    <li><a href="#">Planes de salud</a></li>
+                    <li><a href="#">Beneficios extras</a></li>
+                </ul>
+            </li>
+            <li class="sidebar-item">
+                <a href="#" class="sidebar-link" data-bs-toggle="collapse" data-bs-target="#submenuConfiguracion"
+                   aria-expanded="false">
+                    <i class="lni lni-cog"></i>
+                    <span>CONFIGURACIÓN</span>
+                </a>
+                <ul class="collapse list-unstyled ps-4" id="submenuConfiguracion">
+                    <li><a href="#">Gestion de roles y permisos</a></li>
+                    <li><a href="#">Personalizacion del sistema</a></li>
+                    <li><a href="#">Agustes generales</a></li>
+                </ul>
+            </li>
+        </ul>
+        <div class="sidebar-footer">
+            <a href="Login.html" class="sidebar-link">
+                <i class="lni lni-exit"></i>
+                <span>Logout</span>
+            </a>
+        </div>
+    </aside>
+
+    <div class="main d-flex justify-content-center align-items-center" style="height: 100vh;">
+        <div class="text-center">
+            <h1>
+                Bienvenido, selecciona algún aparato para empezar a trabajar
+            </h1>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+<script src="../js/Home.js"></script>
+</body>
+
+</html>
